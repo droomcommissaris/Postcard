@@ -28,6 +28,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonPressed(sender: AnyObject) {
+        // Adding comment to test commit
         
         messageLabel.hidden = false
         messageLabel.text = enterMessageTextfield.text
