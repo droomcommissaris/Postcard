@@ -80,9 +80,18 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0af-PU-HI2">
+                                <rect key="frame" x="16" y="189" width="435" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJN-kN-NoD">
                                 <rect key="frame" x="16" y="239" width="435" height="30"/>
                                 <color key="backgroundColor" red="0.29803922772407532" green="0.29803922772407532" blue="0.29803922772407532" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="YQE-WJ-nN1"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -98,15 +107,19 @@
                             <constraint firstItem="eDr-ZB-kkw" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="0GM-9A-Vy7"/>
                             <constraint firstItem="I3g-9a-JES" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="51f-GK-Eh0"/>
                             <constraint firstItem="I3g-9a-JES" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="57q-ze-Gyd"/>
+                            <constraint firstItem="dJN-kN-NoD" firstAttribute="top" secondItem="0af-PU-HI2" secondAttribute="bottom" constant="8" id="5ts-oD-y9f"/>
                             <constraint firstItem="P10-Fq-zWX" firstAttribute="leading" secondItem="dJN-kN-NoD" secondAttribute="trailing" constant="8" id="BDV-BO-jaX"/>
                             <constraint firstItem="eDr-ZB-kkw" firstAttribute="top" secondItem="dJN-kN-NoD" secondAttribute="bottom" constant="17" id="F1Q-ez-5d4"/>
                             <constraint firstItem="eDr-ZB-kkw" firstAttribute="top" secondItem="P10-Fq-zWX" secondAttribute="bottom" constant="17" id="QYA-b0-VTn"/>
+                            <constraint firstItem="0af-PU-HI2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="S3m-Gf-5au"/>
+                            <constraint firstItem="P10-Fq-zWX" firstAttribute="leading" secondItem="0af-PU-HI2" secondAttribute="trailing" constant="8" id="TcR-6h-YoA"/>
                             <constraint firstItem="5ci-SH-6s2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="TxV-na-sOH"/>
                             <constraint firstItem="P10-Fq-zWX" firstAttribute="top" secondItem="5ci-SH-6s2" secondAttribute="bottom" constant="8" id="fIi-Bc-Qi3"/>
                             <constraint firstItem="P10-Fq-zWX" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="m30-an-HJJ"/>
                             <constraint firstItem="dJN-kN-NoD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ont-mq-Af2"/>
                             <constraint firstItem="5ci-SH-6s2" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="syt-He-NwO"/>
                             <constraint firstItem="eDr-ZB-kkw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="tpa-M4-Nh3"/>
+                            <constraint firstItem="0af-PU-HI2" firstAttribute="top" secondItem="5ci-SH-6s2" secondAttribute="bottom" constant="8" id="vs0-jU-DDY"/>
                             <constraint firstItem="I3g-9a-JES" firstAttribute="top" secondItem="eDr-ZB-kkw" secondAttribute="bottom" constant="8" id="wQv-iy-w4C"/>
                             <constraint firstItem="5ci-SH-6s2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ywi-CQ-P6K"/>
                         </constraints>
@@ -115,6 +128,7 @@
                         <outlet property="enterMessageTextfield" destination="I3g-9a-JES" id="5a3-8r-QaI"/>
                         <outlet property="enterNameTextfield" destination="eDr-ZB-kkw" id="pjg-WU-oHY"/>
                         <outlet property="messageLabel" destination="5ci-SH-6s2" id="Sfq-rX-zpx"/>
+                        <outlet property="nameLabel" destination="0af-PU-HI2" id="ZOR-YM-y8T"/>
                         <outlet property="sendMailButton" destination="dJN-kN-NoD" id="0bx-uc-7yF"/>
                     </connections>
                 </viewController>
